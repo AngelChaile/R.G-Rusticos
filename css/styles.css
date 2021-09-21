@@ -239,7 +239,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #b88645;
+  color: #42422d79;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11476,4 +11476,55 @@ p {
 
 .address strong {
   font-size: 1.2rem;
+}
+
+
+/*Agregue el formulario*/
+
+.form{ width: 400px;
+  background: #f6e1c5;
+  padding: 30px;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-family:"Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #212529;
+  box-shadow: 7px 13px 37px #212529;
+}
+
+.form h3{
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.control{
+  width: 100%;
+  background-color: #ECF0F1;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid rgb(230 164 86 / 50%);
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 18px;
+}
+
+.form .boton{
+  color: #212529;
+  font-size: 16px;
+  padding: 1.5px;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+/*Aca termina el formulario*/
+
+.instagram{
+  color: #CC0000;
+}
+
+.facebook{
+  color: #1976D2;
+}
+
+.whatsapp{
+  color: #00CC00;
 }
