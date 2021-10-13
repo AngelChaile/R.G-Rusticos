@@ -601,6 +601,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-left: 6em;
 }
 
 .img-thumbnail {
@@ -637,7 +638,7 @@ progress {
   padding-right: var(--bs-gutter-x, 13rem); /* <--- esto estaba en 0.75rem */
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
-  margin-left: 13%;   /* <--- esto estaba en auto*/
+  margin-left: auto;   /* <--- esto estaba en auto*/
 }
 
 @media (min-width: 576px) {
@@ -11322,12 +11323,14 @@ p {
 }
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 100;
 }
 
 .bg-faded {
   background-color: #f6e1c5;
+  margin-left: 1em;
+  margin-right: -11em;
 }
 
 .btn-xl {
@@ -11481,7 +11484,7 @@ p {
 
 /*Agregue el formulario*/
 
-.form{ width: 30%;
+.form{ width: 100%;
   background: #f6e1c5;
   padding: 30px;
   margin: auto;
@@ -11528,3 +11531,25 @@ p {
 .whatsapp{
   color: #00CC00;
 }
+
+/*Productos*/
+.productos{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.productos p{
+  color: white;
+}
+
+.productos img{
+  width: 100%;
+  height: 180px;
+}
+
+
+.precio{
+  color: #E5E7E9;
+}
+
