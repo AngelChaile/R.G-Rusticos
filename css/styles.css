@@ -11387,6 +11387,8 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  padding-left: 16rem;
+  padding-right: -5rem;
   background-color: rgba(230, 167, 86, 0.9);
 }
 .cta .cta-inner {
@@ -11548,8 +11550,16 @@ p {
   height: 180px;
 }
 
-
-.precio{
-  color: #E5E7E9;
+.productos h3{
+  color: #000;
 }
+
+.trabajando{
+  width: 22%;
+  height: 60%;
+}
+
+/*.precio{
+  color: #E5E7E9;
+}*/
 
