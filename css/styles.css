@@ -11553,12 +11553,15 @@ p {
 .productos h3{
   color: #000;
 }
-
+/* Nosotros*/
 .trabajando{
-  width: 22%;
+  width: 30%;
   height: 60%;
 }
 
+.trabajando-left{
+  padding-left: 8%;
+}
 /*.precio{
   color: #E5E7E9;
 }*/
