@@ -11393,8 +11393,10 @@ p {
 }
 .cta .cta-inner {
   position: relative;
-  padding: 3rem;
-  margin: 0.5rem;
+  padding-left: 3rem;
+  margin-left: -10.5rem;
+  margin-right: -6em;
+  padding-right: 2em;
 }
 .cta .cta-inner:before {
   border-radius: 0.5rem;
@@ -11551,16 +11553,16 @@ p {
 }
 
 .productos h3{
-  color: #000;
+  color: white;
 }
 /* Nosotros*/
 .trabajando{
-  width: 30%;
-  height: 60%;
+  width: 250px;
+  height: 350px;
 }
 
 .trabajando-left{
-  padding-left: 8%;
+  padding-left: ;
 }
 /*.precio{
   color: #E5E7E9;

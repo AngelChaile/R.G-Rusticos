@@ -9,9 +9,16 @@
     //Se instancia un objeto de la clase PHPMailer
 	$mail = new PHPMailer(true);
 
+    //Declaración de variables para almacenar los datos ingresados por el usuario en cada input del formulario. Recordar que se accede por el "name" del input.
+
+    $nombre = $_POST['nombre'];
+    $nombre = $_POST['apellido']; //agregue el apellido (preguntar al profe)//
+    $email = $_POST['correo'];
+    $comentario = $_POST['comentario'];
+
 try {
     //Configuración del servidor
-    $mail->SMTPDebug = 0; //Se habilita la depuración, si se utiliza un servidor local colocar
+    $mail->SMTPDebug = 0; //Se habilita la depuración, si se utiliza un servidor local colocar, si se utiliza un servidor local colocar $mail->SMTPDebug = 0;
     $mail->isSMTP();       //Se utiliza el protocolo SMTP
     $mail->Host       = 'smtp.gmail.com';  //Colocar aquí el servidor de correo a utilizar, en el ejemplo smtp de gmail
     $mail->SMTPAuth   = true;     //Se habilita la autenticación smtp
@@ -34,7 +41,7 @@ try {
 
     //Contenido
     $mail->isHTML(true);                     //Si se envía con formato HTML
-    $mail->Subject = 'Asunto Formulario';  //Asunto del mensaje
+    $mail->Subject = 'Asunto Consulta';  //Asunto del mensaje
     $mail->Body    = 'Mensaje desde R.G Rusticos'; //Mensaje a enviar
  
 
