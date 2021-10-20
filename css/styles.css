@@ -11540,7 +11540,7 @@ p {
 .productos{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  gap: 40px;
 }
 
 .productos p{
