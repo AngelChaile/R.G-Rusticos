@@ -42,11 +42,11 @@ try {
 
     //Contenido
     $mail->isHTML(true);                     //Si se envía con formato HTML
-    $mail->Subject = 'Asunto Consulta';  //Asunto del mensaje
-    $mail->Body    = 'De:'.$email."<br>".
-                     'De:'.$nombre."<br>".
-                     'De:'.$nombre."<br>".
-                    'Mensaje: '.$comentario; //Mensaje a enviar
+    $mail->Subject = 'Consulta desde la web R.G-Rusticos';  //Asunto del mensaje
+    $mail->Body    = 'NOMBRE:'.$nombre."<br>".
+                     'APELLIDO:'.$apellido."<br>".
+                     'MAIL'.$email."<br>".
+                    'MENSAJE:'.$comentario; //Mensaje a enviar
  
 
     $mail->send(); //Se envía el mail
