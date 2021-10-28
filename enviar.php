@@ -42,10 +42,10 @@ try {
 
     //Contenido
     $mail->isHTML(true);                     //Si se envía con formato HTML
-    $mail->Subject = 'Consulta desde la web R.G-Rusticos';  //Asunto del mensaje
+    $mail->Subject = 'Consulta desde la web R.G-Rústicos';  //Asunto del mensaje
     $mail->Body    = 'NOMBRE:'.$nombre."<br>".
                      'APELLIDO:'.$apellido."<br>".
-                     'MAIL'.$email."<br>".
+                     'MAIL:'.$email."<br>".
                     'MENSAJE:'.$comentario; //Mensaje a enviar
  
 
