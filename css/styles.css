@@ -11491,6 +11491,7 @@ p {
 .form{ width: 100%;
   background: #f6e1c5;
   padding: 30px;
+  padding-bottom: 250px;
   margin: auto;
   margin-top: 5px;
   border-radius: 4px;

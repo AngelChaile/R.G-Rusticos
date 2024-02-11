@@ -16,29 +16,33 @@
     $apellido = $_POST['apellido']; //agregue el apellido (preguntar al profe)//
     $email = $_POST['correo'];
     $comentario = $_POST['comentario'];
+    $pdf = $_FILES['my_file'];
+    $correo = 'chaileenzo195@gmail.com';
+    
+
 
 try {
     //Configuración del servidor
-    $mail->SMTPDebug = 0; //Se habilita la depuración, si se utiliza un servidor local colocar, si se utiliza un servidor local colocar $mail->SMTPDebug = 0;
+    $mail->SMTPDebug = 0; //Se habilita la depuración, si se utiliza un servidor local colocar $mail->SMTPDebug = 0;
     $mail->isSMTP();       //Se utiliza el protocolo SMTP
     $mail->Host       = 'smtp.gmail.com';  //Colocar aquí el servidor de correo a utilizar, en el ejemplo smtp de gmail
     $mail->SMTPAuth   = true;     //Se habilita la autenticación smtp
-    $mail->Username   = 'chaileangel91@gmail.com'; //Colocar aquí una dirección de correo valida, debe pertenecer al servidor indicado arriba
-    $mail->Password   = ''; //Colocar aquí la contraseña
+    $mail->Username   = 'angelchaile90@gmail.com'; //Colocar aquí una dirección de correo valida, debe pertenecer al servidor indicado arriba
+    $mail->Password   = 'hlywotyvwogdkqpw'; //Colocar aquí la contraseña
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Habilita el cifrado TLS; se recomienda `PHPMailer::ENCRYPTION_SMTPS` 
     $mail->Port       = 587;                                    //Número del puerto utilizado
 
  
-    $mail->setFrom('chaileangel91@gmail.com', 'Mi Pagina Web'); //Desde donde se envía el mail, el nombre es opcional
-    $mail->addAddress('chaileenzo195@gmail.com', 'Mensaje hacia mi');     //A quién se le envía el mail, el nombre es opcional
+    $mail->setFrom('angelchaile90@gmail.com', 'R.G Rusticos'); //Desde donde se envía el mail, el nombre es opcional
+    $mail->addAddress($correo, 'Mensaje hacia mi');     //A quién se le envía el mail, el nombre es opcional
     //$mail->addAddress('ellen@example.com');  //información opcional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
     //$mail->addBCC('bcc@example.com');
 
     //Las siguiente líneas se utilizan si se desea enviar archivos
-    //$mail->addAttachment('/var/tmp/file.tar.gz');         //Agrega archivos adjuntos
-    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    
+$mail->addAttachment($pdf['tmp_name'], $pdf['name']/*'/var/tmp/file.tar.gz'*/);         //Agrega archivos adjuntos
+   // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    
 
     //Contenido
     $mail->isHTML(true);                     //Si se envía con formato HTML
