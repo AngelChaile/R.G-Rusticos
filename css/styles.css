@@ -11984,4 +11984,18 @@ p {
   .page-section {
     margin: 4rem 0.3rem; /* Reduce el margin lateral */
   }
+
+  .container .sobre-nosotros {
+    margin-bottom: 5rem;
+    padding: 0.9rem;
+  }
+
+  .cta {
+    padding: 2em 0;
+  }
+  .cta .cta-inner {
+    padding: 1.5em;
+    margin: 0;
+  }
+
 }
