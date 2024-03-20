@@ -27,13 +27,13 @@ try {
     $mail->isSMTP();       //Se utiliza el protocolo SMTP
     $mail->Host       = 'smtp.gmail.com';  //Colocar aquí el servidor de correo a utilizar, en el ejemplo smtp de gmail
     $mail->SMTPAuth   = true;     //Se habilita la autenticación smtp
-    $mail->Username   = 'angelchaile90@gmail.com'; //Colocar aquí una dirección de correo valida, debe pertenecer al servidor indicado arriba
+    $mail->Username   = $correo; //Colocar aquí una dirección de correo valida, debe pertenecer al servidor indicado arriba
     $mail->Password   = 'hlywotyvwogdkqpw'; //Colocar aquí la contraseña
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Habilita el cifrado TLS; se recomienda `PHPMailer::ENCRYPTION_SMTPS` 
     $mail->Port       = 587;                                    //Número del puerto utilizado
 
  
-    $mail->setFrom('angelchaile90@gmail.com', 'R.G Rusticos'); //Desde donde se envía el mail, el nombre es opcional
+    $mail->setFrom($email, 'R.G Rusticos'); //Desde donde se envía el mail, el nombre es opcional
     $mail->addAddress($correo, 'Mensaje hacia mi');     //A quién se le envía el mail, el nombre es opcional
     //$mail->addAddress('ellen@example.com');  //información opcional
     //$mail->addReplyTo('info@example.com', 'Information');
