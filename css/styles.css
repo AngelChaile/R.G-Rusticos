@@ -2203,18 +2203,6 @@ progress {
   }
 }
 
-
-/* Mejora la vista formulario par dispositivos pequeños */
-@media only screen and (max-width: 768px) {
-  .cta .cta-inner {
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-right: 0; /* Elimina el margen derecho */
-    padding: 2em; /* Aplica el padding deseado a todos los lados */
-  }
-}
-
-/* -------------- */
-
 .form-label {
   margin-bottom: 0.5rem;
 }
@@ -11723,7 +11711,6 @@ p {
 
 .bg-faded {
   background-color: #f6e1c5;
-
 }
 
 .btn-xl {
@@ -11928,14 +11915,18 @@ p {
 
 .instagram {
   color: #cc0000;
+  font-size: 1.5rem;
 }
 
 .facebook {
   color: #1976d2;
+  font-size: 1.5rem;
+  padding: 0 0.9rem;
 }
 
 .whatsapp {
   color: #00cc00;
+  font-size: 1.5rem;
 }
 
 /* Productos*/
@@ -11952,8 +11943,8 @@ p {
 
 .productos p {
   color: var(--bs-light);
-margin-top: 0rem !important;
-margin-bottom: 0rem !important;
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .productos img {
@@ -11962,7 +11953,7 @@ margin-bottom: 0rem !important;
   border: solid 3px wheat;
 }
 
-.fila3 div:nth-child(-n+2) img {
+.fila3 div:nth-child(-n + 2) img {
   max-height: 138.75px; /* Establece una altura máxima para las dos primeras imágenes */
 }
 
@@ -11970,19 +11961,27 @@ margin-bottom: 0rem !important;
   color: whitesmoke;
 }
 
-/* Nosotros*/
-/* .trabajando {
-  width: 12rem;
-  height: 350px;
-} */
-
-.container .sobre-nosotros{
+.container .sobre-nosotros {
   margin-bottom: 5rem;
   padding: 2.5rem;
 }
 
-.container .quienes-somos{
+.container .quienes-somos {
   border-radius: 0.5rem;
   border: 0.25rem solid rgba(255, 255, 255, 0.85);
   z-index: 1;
+}
+
+/* Mejora la vista formulario par dispositivos pequeños */
+@media only screen and (max-width: 575.98px) {
+  /* cta es la clase del formulario */
+  .cta {
+    padding-left: 0; /* Elimina el padding izquierdo */
+    padding-right: 0; /* Elimina el padding derecho */
+  }
+
+  /* Cambios para la clase .page-section */
+  .page-section {
+    margin: 4rem 0.3rem; /* Reduce el margin lateral */
+  }
 }
