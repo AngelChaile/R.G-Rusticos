@@ -11867,7 +11867,7 @@ p {
   font-size: 1.2rem;
 }
 
-/*Agregue el formulario*/
+/* Formulario */
 
 .form {
   width: 100%;
@@ -11929,7 +11929,7 @@ p {
   font-size: 1.5rem;
 }
 
-/* Productos*/
+/* Productos */
 .productos {
   display: flex;
   flex-direction: column;
@@ -11972,6 +11972,13 @@ p {
   z-index: 1;
 }
 
+.spinner {
+  display: none;
+  color: rgba(47, 23, 15, 0.9);
+  margin-bottom: -10px;
+  margin-left: 10px;
+}
+
 /* Mejora la vista formulario par dispositivos pequeños */
 @media only screen and (max-width: 575.98px) {
   /* cta es la clase del formulario */
@@ -11997,5 +12004,4 @@ p {
     padding: 1.5em;
     margin: 0;
   }
-
 }
